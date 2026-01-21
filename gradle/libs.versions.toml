@@ -1,3 +1,4 @@
+
 [versions]
 agp = "8.13.2"
 junit = "4.13.2"
@@ -8,6 +9,9 @@ material = "1.10.0"
 activity = "1.8.0"
 constraintlayout = "2.1.4"
 roundedimageview = "2.3.0"
+firebaseBom = "34.8.0"
+firebaseMessaging = "25.0.1"
+firebaseFirestore = "26.1.0"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -18,7 +22,10 @@ material = { group = "com.google.android.material", name = "material", version.r
 activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 roundedimageview = { group = "com.makeramen", name = "roundedimageview", version.ref = "roundedimageview" }
+# Corrected Firebase BOM definition
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
+firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging", version.ref = "firebaseMessaging" }
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
-
